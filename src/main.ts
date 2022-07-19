@@ -1,24 +1,22 @@
 import './style.css'
+import './style/prism.css'
 import 'uno.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
+import { html as test } from './md/test.md'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+//自定义元素的类继承自HTMLELement
+class MarkdownComponent extends HTMLElement {
+  constructor() {
+  super();
+  // this表示当前的实例自定义元素
+  console.log(this)
+  const container = document.createElement('div');
+  container.classList.add('container');
+  container.innerHTML = test;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+  // 添加到当前的自定义元素
+  this.appendChild(container);
+  }
+}
+
+// 使用customElements.define()方法,将页面中的自定义组件和类关联起来
+window.customElements.define('md-com', MarkdownComponent)

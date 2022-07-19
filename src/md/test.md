@@ -1,8 +1,8 @@
-# h1
+# h1???
 
 ## h2
 
-```JS
+```js
 const a = () => {
   // nauxscript console
   console.log('%c nauxscript snippet', 'color: red', window)
