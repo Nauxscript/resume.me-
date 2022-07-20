@@ -20,3 +20,7 @@ declare module '*.md' {
   // Modify below per your usage
   export { attributes, toc, html, ReactComponent, VueComponent, VueComponentWith };
 }
+
+interface Window {
+  customTags: TCustomTags[];
+}
