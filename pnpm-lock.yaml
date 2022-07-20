@@ -1,10 +1,8 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
-  '@types/prismjs': ^1.26.0
   markdown-it: ^13.0.1
   markdown-it-prism: ^2.2.4
-  prismjs: ^1.28.0
   typescript: ^4.6.4
   unocss: ^0.44.3
   vite: ^3.0.0
@@ -12,10 +10,8 @@ specifiers:
 
 dependencies:
   markdown-it: 13.0.1
-  prismjs: 1.28.0
 
 devDependencies:
-  '@types/prismjs': 1.26.0
   markdown-it-prism: 2.2.4
   typescript: 4.7.4
   unocss: 0.44.3_vite@3.0.1
@@ -120,10 +116,6 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
-    dev: true
-
-  /@types/prismjs/1.26.0:
-    resolution: {integrity: sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==}
     dev: true
 
   /@unocss/cli/0.44.3:
@@ -971,6 +963,7 @@ packages:
   /prismjs/1.28.0:
     resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
     engines: {node: '>=6'}
+    dev: true
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
